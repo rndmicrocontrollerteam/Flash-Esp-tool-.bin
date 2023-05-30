@@ -1,0 +1,11 @@
+Open Terminal main
+	sudo -i
+	root@me:~# pip install pyserial
+	root@me:~# pip install esptool
+	
+Open Terminal in folder bin
+esptool.py -p /dev/ttyUSB0 write_flash -fm dout 0x0000 <name file>
+esptool.py -p /dev/ttyUSB0 write_flash -fm dout 0x0000 PhoneBank_30.ino.d1_mini.bin
+
+
+source : https://somtips.com/how-to-flash-bin-file-to-esp8266-from-linux-os/
